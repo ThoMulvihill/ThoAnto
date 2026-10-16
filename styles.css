@@ -5,9 +5,7 @@
     box-sizing: border-box;
 }
 
-
-
-#encabezado {
+.encabezado {
     display: flex;
     background-color: rgb(8, 67, 119);
     height: 70px;
@@ -19,60 +17,65 @@
     box-shadow: 0 5px 15px;
 }
 
-#encabezado ul {
+.encabezado ul {
     height: 40px;
-    width: 600px;
     margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-#encabezado ul li {
-    line-height: px;
+.encabezado ul li {
 	list-style-type: none;
+
 }
 
-#encabezado ul li a{
+.encabezado ul li a{
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
     color: rgb(9, 31, 37);
-    transition: transform 0.2s ease;
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
-#encabezado ul li:hover {
+.encabezado ul li a:hover {
     transform: scale(1.05);
+    color: #619aa1;
 }
 
 #foto {
-    width: 90px;
-    height: 60px;
+    width: 70px;
     display: block;
+    
 }
 
-#titulo{
+.titulo{
     font-size: 28px;
     text-align: left;
     margin-top: 13px;
     margin-bottom: 15px;
 }
 
-#banner {
+.banner {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     padding-left: 120px;
 }
 
-#contenedor {
+.contenedor {
     margin: auto;
     height:auto;
     width: 90%;
+    background-color: ;
 }
 
 .centro {
     padding: 10px;
-    background-color: #aca5a5;
+    background-color: #e2dfdf;
 }
 
 .cajas {
@@ -83,7 +86,11 @@
     flex-direction: column;
     border-radius: 8px;
     box-shadow: 0 5px 15px;
+    transform: translateY(-4px) 0.3s ease;
+}
 
+.cajas:hover{
+    transform: scale(1.02);
 }
 
 p {
@@ -98,7 +105,7 @@ p {
 
 h3 {
     font-family: Tahoma, Geneva, sans-serif;
-    font-size: 13p;
+    font-size: 13px;
     text-align: left;
     color: rgb(8, 23, 41);
     text-transform: uppercase;
@@ -106,7 +113,7 @@ h3 {
     margin-top: 8px;
 }
 
-#pie {
+.pie {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #aca5a5;
